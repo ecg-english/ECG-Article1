@@ -79,6 +79,7 @@
         </div>
     </div>
 
+    <script src="../quiz.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const items = document.querySelectorAll('.lesson-item-animate');
@@ -88,6 +89,8 @@
                     item.classList.add('visible');
                 }, 400 + delay);
             });
+            // クリア状況を反映
+            applyClearStatus();
         });
     </script>
 </body>
