@@ -506,7 +506,7 @@
                 type: 'sort',
                 question: '「私はあなたに会った日を覚えています」<br>正しい語順に並べ替えなさい。',
                 words: ['when', 'I', 'remember', 'the', 'day', 'I', 'met', 'you', '.'],
-                correctOrder: [2, 1, 3, 4, 0, 5, 6, 7, 8], // I remember the day when I met you.
+                correctOrder: [1, 2, 3, 4, 0, 5, 6, 7, 8], // I remember the day when I met you.
                 flexibleOrder: [[1, 5]], // 'I'が2回出てくるので順不同
                 explanation: '時を表す関係副詞whenを使います。「I remember the day when I met you.」の順になります。'
             },
@@ -520,10 +520,10 @@
             },
             {
                 type: 'true_false',
-                question: '次の文は正しいですか？<br><span class="en-font text-2xl">"This is the house which I live."</span>',
+                question: '次の文は正しいですか？<br><span class="en-font text-2xl">"I don\'t know the reason why he left."</span>',
                 choices: ['正しい (Correct)', '間違い (Incorrect)'],
-                correct: 1,
-                explanation: '間違いです。場所を表す場合は関係副詞whereを使います。whichを使う場合は前置詞が必要です（in which）。正しくは「This is the house where I live.」です。'
+                correct: 0,
+                explanation: '正しいです。理由を表す場合は関係副詞whyを使います。「I don\'t know the reason why he left.」は正しい文です。'
             }
         ];
 

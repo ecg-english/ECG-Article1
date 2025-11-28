@@ -542,7 +542,6 @@
                 question: '「彼は『明日来ます』と言いました」<br>間接話法で正しい語順に並べ替えなさい。',
                 words: ['would', 'He', 'that', 'he', 'said', 'come', 'the', 'next', 'day', '.'],
                 correctOrder: [1, 4, 2, 3, 0, 5, 6, 7, 8, 9], // He said that he would come the next day.
-                flexibleOrder: [[1, 3]], // 'He'と'he'が2回出てくるので順不同
                 explanation: '時制の一致によりwillがwouldに変わり、tomorrowがthe next dayに変わります。「He said that he would come the next day.」の順になります。'
             },
             {
@@ -554,10 +553,10 @@
             },
             {
                 type: 'true_false',
-                question: '次の文は正しいですか？<br><span class="en-font text-2xl">"He said that he is tired."</span>（主節の動詞がsaidの場合）',
+                question: '次の文は正しいですか？<br><span class="en-font text-2xl">"She told me to close the door."</span>',
                 choices: ['正しい (Correct)', '間違い (Incorrect)'],
-                correct: 1,
-                explanation: '間違いです。主節の動詞が過去形（said）の場合、従属節の時制も過去にずらす必要があります。正しくは「He said that he was tired.」です。'
+                correct: 0,
+                explanation: '正しいです。命令文の間接話法ではtell/ask + 人 + to doの形を使います。「She told me to close the door.」は正しい文です。'
             }
         ];
 

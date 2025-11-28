@@ -489,7 +489,7 @@
                 type: 'sort',
                 question: '「もし私がお金持ちだったら、旅行するでしょう」<br>倒置構文で正しい語順に並べ替えなさい。',
                 words: ['would', 'I', 'Were', 'rich', ',', 'I', 'travel', '.'],
-                correctOrder: [2, 1, 3, 4, 0, 5, 6, 7], // Were I rich, I would travel.
+                correctOrder: [2, 1, 3, 4, 5, 0, 6, 7], // Were I rich, I would travel.
                 flexibleOrder: [[1, 5]], // 'I'が2回出てくるので順不同
                 explanation: '仮定法ではifを省略してwereを文頭に置きます。「Were I rich, I would travel.」の順になります。'
             },
@@ -502,10 +502,10 @@
             },
             {
                 type: 'true_false',
-                question: '次の文は正しいですか？<br><span class="en-font text-2xl">"Never I have seen such a thing."</span>',
+                question: '次の文は正しいですか？<br><span class="en-font text-2xl">"It was yesterday that I met him."</span>',
                 choices: ['正しい (Correct)', '間違い (Incorrect)'],
-                correct: 1,
-                explanation: '間違いです。否定語を文頭に置く場合は、主語と動詞を倒置する必要があります。正しくは「Never have I seen such a thing.」です。'
+                correct: 0,
+                explanation: '正しいです。強調構文「It is/was...that...」を使って、時（yesterday）を強調しています。「It was yesterday that I met him.」は正しい文です。'
             }
         ];
 
