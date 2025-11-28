@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>初級 | English Grammar Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-slate-50 min-h-screen">
+    <div class="min-h-screen bg-slate-50">
+        <!-- ヘッダー -->
+        <div class="level-header-animate bg-green-600 text-white p-6 pb-12 shadow-md">
+            <a href="../index.html" class="mb-4 text-white/80 hover:text-white text-sm font-bold flex items-center inline-block">
+                <i class="fa-solid fa-arrow-left mr-2"></i> HOME
+            </a>
+            <h1 class="level-title-animate text-3xl font-bold">初級</h1>
+            <p class="level-subtitle-animate opacity-80">Level 1: Expanding the World</p>
+        </div>
+
+        <!-- リスト -->
+        <div class="max-w-3xl mx-auto px-4 -mt-6 space-y-3 pb-20">
+            <a href="lesson-l1-9.html" class="lesson-item-animate bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition-colors group block" data-delay="0">
+                <div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-green-600 transition-colors">9. 疑問詞 (5W1H)</h3>
+                    <p class="text-sm text-slate-500">Yes/No以外の質問をする</p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-slate-300"></i>
+            </a>
+
+            <a href="lesson-l1-10.html" class="lesson-item-animate bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition-colors group block" data-delay="100">
+                <div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-green-600 transition-colors">10. 現在進行形</h3>
+                    <p class="text-sm text-slate-500">今まさにしていること</p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-slate-300"></i>
+            </a>
+
+            <a href="lesson-l1-11.html" class="lesson-item-animate bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition-colors group block" data-delay="200">
+                <div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-green-600 transition-colors">11. 過去形</h3>
+                    <p class="text-sm text-slate-500">思い出を語る</p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-slate-300"></i>
+            </a>
+
+            <a href="lesson-l1-12.html" class="lesson-item-animate bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition-colors group block" data-delay="300">
+                <div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-green-600 transition-colors">12. 未来形</h3>
+                    <p class="text-sm text-slate-500">will と be going to</p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-slate-300"></i>
+            </a>
+
+            <a href="lesson-l1-13.html" class="lesson-item-animate bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition-colors group block" data-delay="400">
+                <div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-green-600 transition-colors">13. 助動詞 (Can)</h3>
+                    <p class="text-sm text-slate-500">能力と可能性</p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-slate-300"></i>
+            </a>
+
+            <a href="lesson-l1-14.html" class="lesson-item-animate bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition-colors group block" data-delay="500">
+                <div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-green-600 transition-colors">14. 命令文</h3>
+                    <p class="text-sm text-slate-500">相手を動かす</p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-slate-300"></i>
+            </a>
+
+            <a href="lesson-l1-15.html" class="lesson-item-animate bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition-colors group block" data-delay="600">
+                <div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-green-600 transition-colors">15. 場所と時の前置詞</h3>
+                    <p class="text-sm text-slate-500">at, on, in のコアイメージ</p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-slate-300"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="../quiz.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const items = document.querySelectorAll('.lesson-item-animate');
+            items.forEach(item => {
+                const delay = parseInt(item.getAttribute('data-delay')) || 0;
+                setTimeout(() => {
+                    item.classList.add('visible');
+                }, 400 + delay);
+            });
+            applyClearStatus();
+        });
+    </script>
+</body>
+</html>
+

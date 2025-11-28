@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Grammar Hub | 英語文法・完全攻略</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 min-h-screen pb-20">
+                                        <div>
+                    <!-- ヒーローセクション -->
+        <header class="hero-animate bg-slate-900 text-white pt-12 pb-16 px-4 text-center rounded-b-[3rem] shadow-xl mb-10 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+                <i class="fa-solid fa-font hero-bg-icon text-9xl absolute top-[-20px] left-[-20px]"></i>
+                <i class="fa-solid fa-quote-right hero-bg-icon text-9xl absolute bottom-[-20px] right-[-20px]"></i>
+                        </div>
+            <h1 class="hero-title text-3xl md:text-5xl font-bold mb-4 tracking-tight">English Grammar Hub</h1>
+            <p class="hero-subtitle text-slate-400 max-w-xl mx-auto">ネイティブの脳内をインストールする。<br>暗記ではなく「理解」で学ぶ、最強の文法ガイド。</p>
+                    </header>
+
+                    <!-- レベル選択グリッド -->
+                    <div class="px-4 max-w-4xl mx-auto -mt-10 grid gap-6 md:grid-cols-2 mb-12 relative z-10">
+            <!-- 超入門カード -->
+            <a href="level0/" class="level-card card-animate bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100" data-delay="0" data-level="0">
+                <div class="h-2 bg-gradient-to-r from-blue-400 to-blue-600"></div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4 relative">
+                        <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-2xl shadow-md">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <div class="progress-chart" data-level="0">
+                            <svg class="progress-ring" width="48" height="48">
+                                <defs>
+                                    <linearGradient id="gradient-0" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="progress-ring-background" cx="24" cy="24" r="20" fill="none" stroke="#e2e8f0" stroke-width="4"></circle>
+                                <circle class="progress-ring-circle" cx="24" cy="24" r="20" fill="none" stroke="url(#gradient-0)" stroke-width="4" stroke-linecap="round" transform="rotate(-90 24 24)"></circle>
+                            </svg>
+                            <span class="progress-text">0%</span>
+                        </div>
+                    </div>
+                    <h2 class="text-xl font-bold text-slate-800 mb-1">超入門</h2>
+                    <p class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-3">Level 0: The Core</p>
+                    <p class="text-sm text-slate-500 mb-6 min-h-[3em]">英語の「骨格」を作る。まずはここから。</p>
+                    <div class="flex items-center text-sm font-bold text-blue-600 group">
+                        学習を始める <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 初級カード -->
+            <a href="level1/" class="level-card card-animate bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100" data-delay="100" data-level="1">
+                <div class="h-2 bg-gradient-to-r from-green-400 to-green-600"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4 relative">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-2xl shadow-md">
+                            <i class="fa-solid fa-earth-americas"></i>
+                            </div>
+                        <div class="progress-chart" data-level="1">
+                            <svg class="progress-ring" width="48" height="48">
+                                <defs>
+                                    <linearGradient id="gradient-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="progress-ring-background" cx="24" cy="24" r="20" fill="none" stroke="#e2e8f0" stroke-width="4"></circle>
+                                <circle class="progress-ring-circle" cx="24" cy="24" r="20" fill="none" stroke="url(#gradient-1)" stroke-width="4" stroke-linecap="round" transform="rotate(-90 24 24)"></circle>
+                            </svg>
+                            <span class="progress-text">0%</span>
+                        </div>
+                    </div>
+                    <h2 class="text-xl font-bold text-slate-800 mb-1">初級</h2>
+                    <p class="text-xs font-bold text-green-600 uppercase tracking-wider mb-3">Level 1: Expanding the World</p>
+                    <p class="text-sm text-slate-500 mb-6 min-h-[3em]">「時」と「情報」を操る。過去・未来・進行形・疑問詞。</p>
+                    <div class="flex items-center text-sm font-bold text-green-600 group">
+                        学習を始める <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 中級カード -->
+            <a href="level2/" class="level-card card-animate bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100" data-delay="200" data-level="2">
+                <div class="h-2 bg-gradient-to-r from-orange-400 to-orange-600"></div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4 relative">
+                        <div class="w-12 h-12 rounded-xl bg-orange-500 text-white flex items-center justify-center text-2xl shadow-md">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <div class="progress-chart" data-level="2">
+                            <svg class="progress-ring" width="48" height="48">
+                                <defs>
+                                    <linearGradient id="gradient-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#fb923c;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="progress-ring-background" cx="24" cy="24" r="20" fill="none" stroke="#e2e8f0" stroke-width="4"></circle>
+                                <circle class="progress-ring-circle" cx="24" cy="24" r="20" fill="none" stroke="url(#gradient-2)" stroke-width="4" stroke-linecap="round" transform="rotate(-90 24 24)"></circle>
+                            </svg>
+                            <span class="progress-text">0%</span>
+                        </div>
+                    </div>
+                    <h2 class="text-xl font-bold text-slate-800 mb-1">中級</h2>
+                    <p class="text-xs font-bold text-orange-600 uppercase tracking-wider mb-3">Level 2: Nuance</p>
+                    <p class="text-sm text-slate-500 mb-6 min-h-[3em]">助動詞の拡張、完了形、比較など。</p>
+                    <div class="flex items-center text-sm font-bold text-orange-600 group">
+                            学習を始める <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 上級カード -->
+            <a href="level3/" class="level-card card-animate bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100" data-delay="300" data-level="3">
+                <div class="h-2 bg-gradient-to-r from-red-400 to-red-600"></div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4 relative">
+                        <div class="w-12 h-12 rounded-xl bg-rose-600 text-white flex items-center justify-center text-2xl shadow-md">
+                            <i class="fa-solid fa-chess"></i>
+                        </div>
+                        <div class="progress-chart" data-level="3">
+                            <svg class="progress-ring" width="48" height="48">
+                                <defs>
+                                    <linearGradient id="gradient-3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#f43f5e;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#e11d48;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="progress-ring-background" cx="24" cy="24" r="20" fill="none" stroke="#e2e8f0" stroke-width="4"></circle>
+                                <circle class="progress-ring-circle" cx="24" cy="24" r="20" fill="none" stroke="url(#gradient-3)" stroke-width="4" stroke-linecap="round" transform="rotate(-90 24 24)"></circle>
+                            </svg>
+                            <span class="progress-text">0%</span>
+                        </div>
+                    </div>
+                    <h2 class="text-xl font-bold text-slate-800 mb-1">上級</h2>
+                    <p class="text-xs font-bold text-red-600 uppercase tracking-wider mb-3">Level 3: Logic</p>
+                    <p class="text-sm text-slate-500 mb-6 min-h-[3em]">関係代名詞、仮定法、高度な構文。</p>
+                    <div class="flex items-center text-sm font-bold text-red-600 group">
+                        学習を始める <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <footer class="footer-animate text-center text-slate-400 text-sm pb-10">
+            &copy; 2025 英会話ジム ECG
+        </footer>
+    </div>
+
+    <!-- ECGくんフローティングボタン -->
+    <button id="ecgKunButton" class="ecg-kun-button fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center border-2 border-blue-200 hover:border-blue-400">
+        <img id="ecgKunFloatingImg" src="image/ECGkun.png" alt="ECGくん" class="w-12 h-12 object-contain">
+    </button>
+
+    <!-- ECGくんチャットモーダル -->
+    <div id="ecgChatModal" class="ecg-chat-modal fixed inset-0 z-[100] flex items-center justify-center pointer-events-none">
+        <div class="ecg-chat-overlay absolute inset-0 bg-black/30 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
+        <div class="ecg-chat-container relative bg-white rounded-2xl shadow-2xl w-full max-w-2xl h-[80vh] max-h-[800px] flex flex-col transform scale-95 opacity-0 transition-all duration-300">
+            <!-- チャットヘッダー -->
+            <div class="ecg-chat-header bg-gradient-to-r from-blue-500 to-blue-600 text-white p-4 rounded-t-2xl flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <img id="ecgKunHeaderImg" src="image/ECGkun.png" alt="ECGくん" class="w-10 h-10 object-contain">
+                    <div>
+                        <h3 class="font-bold text-lg">ECGくん</h3>
+                        <p class="text-xs text-blue-100">オンライン</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button id="ecgChatSettings" class="text-white/80 hover:text-white transition-colors" title="ECGくんをカスタマイズ">
+                        <i class="fa-solid fa-palette text-lg"></i>
+                    </button>
+                    <button id="ecgChatClose" class="text-white/80 hover:text-white transition-colors">
+                        <i class="fa-solid fa-times text-xl"></i>
+                        </button>
+                </div>
+                    </div>
+
+            <!-- チャットメッセージエリア -->
+            <div id="ecgChatMessages" class="ecg-chat-messages flex-1 overflow-y-auto p-4 space-y-4">
+                <!-- メッセージはJavaScriptで動的に追加 -->
+                    </div>
+
+            <!-- チャット入力エリア（選択肢ボタン用） -->
+            <div id="ecgChatOptions" class="ecg-chat-options p-4 border-t border-slate-200 space-y-2">
+                <!-- 選択肢ボタンはJavaScriptで動的に追加 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ECGくんカスタマイズモーダル -->
+    <div id="ecgCustomizeModal" class="ecg-customize-modal fixed inset-0 z-[110] flex items-center justify-center pointer-events-none">
+        <div class="ecg-customize-overlay absolute inset-0 bg-black/40 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
+        <div class="ecg-customize-container relative bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[80vh] flex flex-col transform scale-95 opacity-0 transition-all duration-300">
+            <div class="ecg-customize-header bg-gradient-to-r from-purple-500 to-purple-600 text-white p-4 rounded-t-2xl flex items-center justify-between">
+                <h3 class="font-bold text-lg">ECGくんをカスタマイズ</h3>
+                <button id="ecgCustomizeClose" class="text-white/80 hover:text-white transition-colors">
+                    <i class="fa-solid fa-times text-xl"></i>
+                </button>
+            </div>
+            <div class="ecg-customize-content p-6 overflow-y-auto">
+                <p class="text-sm text-slate-600 mb-4">レッスンをクリアすると、新しいECGくんのスタイルが解放されます！</p>
+                <div id="ecgCustomizeGrid" class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <!-- 画像選択カードはJavaScriptで動的に追加 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 各レベルのレッスン数とレッスンIDの定義
+        const levelConfig = {
+            0: { total: 8, lessons: ['l0-1', 'l0-2', 'l0-3', 'l0-4', 'l0-5', 'l0-6', 'l0-7', 'l0-8'] },
+            1: { total: 7, lessons: ['l1-9', 'l1-10', 'l1-11', 'l1-12', 'l1-13', 'l1-14', 'l1-15'] },
+            2: { total: 8, lessons: ['l2-16', 'l2-17', 'l2-18', 'l2-19', 'l2-20', 'l2-21', 'l2-22', 'l2-23'] },
+            3: { total: 7, lessons: ['l3-24', 'l3-25', 'l3-26', 'l3-27', 'l3-28', 'l3-29', 'l3-30'] }
+        };
+
+        // 達成率を計算して円グラフを更新
+        function updateProgressChart(level, delay = 0) {
+            const config = levelConfig[level];
+            if (!config) return;
+
+            let completedCount = 0;
+            config.lessons.forEach(lessonId => {
+                const key = `lesson_completed_${lessonId}`;
+                if (localStorage.getItem(key) === 'true') {
+                    completedCount++;
+                }
+            });
+
+            const percentage = Math.round((completedCount / config.total) * 100);
+            const chart = document.querySelector(`.progress-chart[data-level="${level}"]`);
+            if (!chart) return;
+
+            const circle = chart.querySelector('.progress-ring-circle');
+            const text = chart.querySelector('.progress-text');
+            
+            if (circle && text) {
+                const circumference = 2 * Math.PI * 20; // r=20
+                const offset = circumference - (percentage / 100) * circumference;
+                
+                // 初期状態を設定
+                circle.style.strokeDasharray = `${circumference} ${circumference}`;
+                circle.style.strokeDashoffset = circumference; // 0%から開始
+                
+                // アニメーション開始を遅延
+                setTimeout(() => {
+                    circle.style.strokeDashoffset = offset;
+                    
+                    // パーセンテージのカウントアップアニメーション
+                    animateCounter(text, 0, percentage, 800);
+                }, delay);
+            }
+        }
+
+        // カウントアップアニメーション
+        function animateCounter(element, start, end, duration) {
+            const startTime = performance.now();
+            const animate = (currentTime) => {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                // イージング関数（ease-out）
+                const easeOut = 1 - Math.pow(1 - progress, 3);
+                const current = Math.round(start + (end - start) * easeOut);
+                
+                element.textContent = `${current}%`;
+                
+                if (progress < 1) {
+                    requestAnimationFrame(animate);
+                } else {
+                    element.textContent = `${end}%`;
+                }
+            };
+            requestAnimationFrame(animate);
+        }
+
+        // ページ読み込み後にアニメーションを発動
+        document.addEventListener('DOMContentLoaded', function() {
+            // カードアニメーション（順番に表示、より長い間隔で）
+            const cards = document.querySelectorAll('.card-animate');
+            cards.forEach((card, index) => {
+                const delay = parseInt(card.getAttribute('data-delay')) || 0;
+                const level = parseInt(card.getAttribute('data-level')) || 0;
+                const cardDelay = 300 + delay * 0.5;
+                
+                setTimeout(() => {
+                    card.classList.add('visible');
+                    
+                    // カード内の要素にも個別アニメーション
+                    const icon = card.querySelector('.w-12');
+                    const title = card.querySelector('h2');
+                    const desc = card.querySelector('p.text-xs');
+                    const text = card.querySelector('p.text-sm');
+                    const button = card.querySelector('.flex.items-center');
+                    
+                    if (icon) {
+                        setTimeout(() => {
+                            icon.style.animationDelay = '0.1s';
+                        }, 100);
+                    }
+                    
+                    // テキスト要素の順次表示
+                    [title, desc, text, button].forEach((el, i) => {
+                        if (el) {
+                            el.style.opacity = '0';
+                            el.style.transform = 'translateY(10px)';
+                            setTimeout(() => {
+                                el.style.transition = 'all 0.3s ease-out';
+                                el.style.opacity = '1';
+                                el.style.transform = 'translateY(0)';
+                            }, 50 + (i * 50));
+                        }
+                    });
+                    
+                    // 円グラフアニメーションをカード表示後に開始
+                    // カードアニメーション + 円グラフの初期アニメーション + 描画アニメーションの遅延
+                    updateProgressChart(level, cardDelay + 600);
+                }, cardDelay);
+            });
+
+            // フッターアニメーション
+            const footer = document.querySelector('.footer-animate');
+            setTimeout(() => {
+                footer.classList.add('visible');
+            }, 600); // カードアニメーション後に表示
+
+            // ECGくんチャット機能の初期化
+            initECGChat();
+        });
+
+        // ECGくんチャット機能
+        function initECGChat() {
+            const chatButton = document.getElementById('ecgKunButton');
+            const chatModal = document.getElementById('ecgChatModal');
+            const chatClose = document.getElementById('ecgChatClose');
+            const chatMessages = document.getElementById('ecgChatMessages');
+            const chatOptions = document.getElementById('ecgChatOptions');
+
+            // Q&Aデータと機能メニュー
+            const qaData = [
+                {
+                    question: '今の学習進捗を教えて',
+                    type: 'progress',
+                    answer: null // 動的に生成
+                },
+                {
+                    question: 'おすすめのレッスンは？',
+                    type: 'recommendation',
+                    answer: null // 動的に生成
+                },
+                {
+                    question: '確認問題が解けない時は？',
+                    answer: '確認問題で間違えた時は、そのレッスンの内容をもう一度読み返してみましょう。特に「よくある間違い」のセクションを確認すると、自分のミスに気づけることが多いです。何度も挑戦できるので、焦らずに理解を深めていきましょう！'
+                },
+                {
+                    question: 'どの順番で学習すればいい？',
+                    answer: '基本的には各レベル内のレッスンを順番に進めることをおすすめします。特に「超入門」は英語の基礎となる重要な内容なので、しっかりと理解してから次のレベルに進みましょう。ただし、自分のペースで無理なく進めることが大切です。'
+                },
+                {
+                    question: 'モチベーションが上がらない時は？',
+                    answer: 'そんな時こそ、小さな目標を立ててみましょう！「今日は1レッスンだけクリアする」など、達成しやすい目標を設定すると、達成感が得られてモチベーションが上がります。また、ホーム画面の達成度グラフを見ると、自分の成長が実感できてやる気が出ますよ！'
+                },
+                {
+                    question: '英語が苦手だけど大丈夫？',
+                    answer: '大丈夫です！このサイトは「暗記」ではなく「理解」で学べるように作られています。難しい用語を使わず、わかりやすい例文と図解で説明しているので、英語が苦手な方でも無理なく学習できます。焦らず、自分のペースで進めていきましょう！'
+                }
+            ];
+
+            let isInitialized = false;
+
+            // チャットを開く
+            function openChat() {
+                chatModal.classList.add('active');
+                if (!isInitialized) {
+                    showInitialMessage();
+                    isInitialized = true;
+                }
+            }
+
+            // チャットを閉じる
+            function closeChat() {
+                chatModal.classList.remove('active');
+            }
+
+            // 初期メッセージを表示
+            function showInitialMessage() {
+                chatMessages.innerHTML = '';
+                chatOptions.innerHTML = '';
+
+                const selectedImageId = localStorage.getItem('ecg_selected_image') || 'default';
+                const ecgImages = [
+                    { id: 'default', path: 'image/ECGkun.png' },
+                    { id: 'lv1', path: 'image/ECGkun-lv1.png' },
+                    { id: 'lv2', path: 'image/ECGkun-lv2.png' },
+                    { id: 'lv3', path: 'image/ECGkun-lv3.png' },
+                    { id: 'lv4', path: 'image/ECGkun-lv4.png' },
+                    { id: 'lv5', path: 'image/ECGkun-lv5.png' },
+                    { id: 'lv6', path: 'image/ECGkun-lv6.png' },
+                    { id: 'lv7', path: 'image/ECGkun-lv7.png' },
+                    { id: 'lv8', path: 'image/ECGkun-lv8.png' },
+                    { id: 'lv9', path: 'image/ECGkun-lv9.png' },
+                    { id: 'lv10', path: 'image/ECGkun-lv10.png' }
+                ];
+                const selectedImage = ecgImages.find(img => img.id === selectedImageId) || ecgImages[0];
+                
+                const initialMessage = `
+                    <div class="ecg-message ecg-message-ecg">
+                        <div class="ecg-message-avatar">
+                            <img src="${selectedImage.path}" alt="ECGくん">
+                        </div>
+                        <div class="ecg-message-content">
+                            <p>こんにちは！ECGくんです！👋</p>
+                            <p class="mt-2">このGrammar Hubサイトへようこそ！</p>
+                            <p class="mt-2">このサイトは、英語の文法を「暗記」ではなく「理解」で学べるように作られています。</p>
+                            <p class="mt-2"><strong>使い方：</strong></p>
+                            <ul class="mt-2 space-y-1 text-sm list-disc list-inside">
+                                <li>4つのレベル（超入門・初級・中級・上級）から選んで学習を始めます</li>
+                                <li>各レッスンを読んだ後、「このレッスンを完了する」ボタンで確認問題に挑戦</li>
+                                <li>5問すべて正解すると、そのレッスンがクリアになります</li>
+                                <li>ホーム画面の円グラフで達成度を確認できます</li>
+                            </ul>
+                            <p class="mt-3">何か質問があれば、下のボタンから選んでくださいね！</p>
+                        </div>
+                    </div>
+                `;
+                chatMessages.innerHTML = initialMessage;
+                scrollToBottom();
+
+                // Q&A選択肢を表示
+                setTimeout(() => {
+                    showQAOptions();
+                }, 500);
+            }
+
+            // Q&A選択肢を表示
+            function showQAOptions() {
+                chatOptions.innerHTML = '';
+                qaData.forEach((qa, index) => {
+                    const button = document.createElement('button');
+                    button.className = 'ecg-option-button';
+                    button.textContent = qa.question;
+                    button.addEventListener('click', () => {
+                        showAnswer(qa.question, qa.answer, qa.type);
+                        chatOptions.innerHTML = '';
+                    });
+                    chatOptions.appendChild(button);
+                });
+            }
+
+            // 学習進捗を取得
+            function getProgress() {
+                const levelConfig = {
+                    0: { total: 8, lessons: ['l0-1', 'l0-2', 'l0-3', 'l0-4', 'l0-5', 'l0-6', 'l0-7', 'l0-8'], name: '超入門' },
+                    1: { total: 7, lessons: ['l1-9', 'l1-10', 'l1-11', 'l1-12', 'l1-13', 'l1-14', 'l1-15'], name: '初級' },
+                    2: { total: 8, lessons: ['l2-16', 'l2-17', 'l2-18', 'l2-19', 'l2-20', 'l2-21', 'l2-22', 'l2-23'], name: '中級' },
+                    3: { total: 7, lessons: ['l3-24', 'l3-25', 'l3-26', 'l3-27', 'l3-28', 'l3-29', 'l3-30'], name: '上級' }
+                };
+
+                let totalLessons = 0;
+                let completedLessons = 0;
+                const levelProgress = [];
+
+                Object.keys(levelConfig).forEach(level => {
+                    const config = levelConfig[level];
+                    let levelCompleted = 0;
+                    config.lessons.forEach(lessonId => {
+                        totalLessons++;
+                        const key = `lesson_completed_${lessonId}`;
+                        if (localStorage.getItem(key) === 'true') {
+                            completedLessons++;
+                            levelCompleted++;
+                        }
+                    });
+                    const percentage = Math.round((levelCompleted / config.total) * 100);
+                    levelProgress.push({
+                        name: config.name,
+                        completed: levelCompleted,
+                        total: config.total,
+                        percentage: percentage
+                    });
+                });
+
+                return {
+                    total: completedLessons,
+                    totalLessons: totalLessons,
+                    percentage: Math.round((completedLessons / totalLessons) * 100),
+                    levels: levelProgress
+                };
+            }
+
+            // おすすめレッスンを取得
+            function getRecommendation() {
+                const levelConfig = {
+                    0: { lessons: ['l0-1', 'l0-2', 'l0-3', 'l0-4', 'l0-5', 'l0-6', 'l0-7', 'l0-8'], name: '超入門', url: 'level0/' },
+                    1: { lessons: ['l1-9', 'l1-10', 'l1-11', 'l1-12', 'l1-13', 'l1-14', 'l1-15'], name: '初級', url: 'level1/' },
+                    2: { lessons: ['l2-16', 'l2-17', 'l2-18', 'l2-19', 'l2-20', 'l2-21', 'l2-22', 'l2-23'], name: '中級', url: 'level2/' },
+                    3: { lessons: ['l3-24', 'l3-25', 'l3-26', 'l3-27', 'l3-28', 'l3-29', 'l3-30'], name: '上級', url: 'level3/' }
+                };
+
+                // 未完了のレッスンを探す
+                for (let level = 0; level <= 3; level++) {
+                    const config = levelConfig[level];
+                    for (let i = 0; i < config.lessons.length; i++) {
+                        const lessonId = config.lessons[i];
+                        const key = `lesson_completed_${lessonId}`;
+                        if (localStorage.getItem(key) !== 'true') {
+                            const lessonNum = level === 0 ? i + 1 : (level === 1 ? i + 9 : (level === 2 ? i + 16 : i + 24));
+                            return {
+                                level: config.name,
+                                lessonNum: lessonNum,
+                                url: `${config.url}lesson-${lessonId}.html`
+                            };
+                        }
+                    }
+                }
+
+                return null; // すべて完了
+            }
+
+            // 回答を表示
+            function showAnswer(question, answer, type) {
+                // ユーザーの質問を表示
+                const userMessage = document.createElement('div');
+                userMessage.className = 'ecg-message ecg-message-user';
+                userMessage.innerHTML = `
+                    <div class="ecg-message-avatar">
+                        <i class="fa-solid fa-user text-blue-500 text-xl flex items-center justify-center h-full"></i>
+                    </div>
+                    <div class="ecg-message-content">
+                        <p>${question}</p>
+                    </div>
+                `;
+                chatMessages.appendChild(userMessage);
+                scrollToBottom();
+
+                // ECGくんの回答を表示
+                setTimeout(() => {
+                    const ecgMessage = document.createElement('div');
+                    ecgMessage.className = 'ecg-message ecg-message-ecg';
+                    
+                    let answerText = '';
+                    
+                    if (type === 'progress') {
+                        const progress = getProgress();
+                        answerText = `
+                            <p><strong>現在の学習進捗：</strong></p>
+                            <p class="mt-2">全体で <strong>${progress.total}/${progress.totalLessons}レッスン</strong> クリア（${progress.percentage}%）</p>
+                            <div class="mt-3 space-y-2">
+                                ${progress.levels.map(level => `
+                                    <p class="text-sm">${level.name}: ${level.completed}/${level.total}レッスン（${level.percentage}%）</p>
+                                `).join('')}
+                        </div>
+                            <p class="mt-3">素晴らしい進捗ですね！この調子で頑張りましょう！💪</p>
+                        `;
+                    } else if (type === 'recommendation') {
+                        const recommendation = getRecommendation();
+                        if (recommendation) {
+                            answerText = `
+                                <p>次は <strong>${recommendation.level}</strong> の <strong>レッスン${recommendation.lessonNum}</strong> に挑戦してみましょう！</p>
+                                <p class="mt-2">順番に学習を進めると、理解が深まりますよ。頑張ってください！✨</p>
+                            `;
+                        } else {
+                            answerText = `
+                                <p>🎉 素晴らしい！すべてのレッスンをクリアしました！</p>
+                                <p class="mt-2">復習として、もう一度確認問題に挑戦してみるのもおすすめです。理解をさらに深められますよ！</p>
+                            `;
+                        }
+                    } else {
+                        answerText = `<p>${answer}</p>`;
+                    }
+                    
+                    const selectedImageId = localStorage.getItem('ecg_selected_image') || 'default';
+                    const ecgImages = [
+                        { id: 'default', path: 'image/ECGkun.png' },
+                        { id: 'lv1', path: 'image/ECGkun-lv1.png' },
+                        { id: 'lv2', path: 'image/ECGkun-lv2.png' },
+                        { id: 'lv3', path: 'image/ECGkun-lv3.png' },
+                        { id: 'lv4', path: 'image/ECGkun-lv4.png' },
+                        { id: 'lv5', path: 'image/ECGkun-lv5.png' },
+                        { id: 'lv6', path: 'image/ECGkun-lv6.png' },
+                        { id: 'lv7', path: 'image/ECGkun-lv7.png' },
+                        { id: 'lv8', path: 'image/ECGkun-lv8.png' },
+                        { id: 'lv9', path: 'image/ECGkun-lv9.png' },
+                        { id: 'lv10', path: 'image/ECGkun-lv10.png' }
+                    ];
+                    const selectedImage = ecgImages.find(img => img.id === selectedImageId) || ecgImages[0];
+                    
+                    ecgMessage.innerHTML = `
+                        <div class="ecg-message-avatar">
+                            <img src="${selectedImage.path}" alt="ECGくん">
+                        </div>
+                        <div class="ecg-message-content">
+                            ${answerText}
+                </div>
+            `;
+                    chatMessages.appendChild(ecgMessage);
+                    scrollToBottom();
+
+                    // 再度Q&A選択肢を表示
+                    setTimeout(() => {
+                        showQAOptions();
+                    }, 500);
+                }, 300);
+            }
+
+            // チャットを最下部にスクロール
+            function scrollToBottom() {
+                setTimeout(() => {
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }, 100);
+            }
+
+            // イベントリスナー
+            chatButton.addEventListener('click', openChat);
+            chatClose.addEventListener('click', closeChat);
+            chatModal.querySelector('.ecg-chat-overlay').addEventListener('click', closeChat);
+
+            // ECGくんカスタマイズ機能の初期化
+            initECGCustomize();
+        }
+
+        // ECGくんカスタマイズ機能
+        function initECGCustomize() {
+            const customizeButton = document.getElementById('ecgChatSettings');
+            const customizeModal = document.getElementById('ecgCustomizeModal');
+            const customizeClose = document.getElementById('ecgCustomizeClose');
+            const customizeGrid = document.getElementById('ecgCustomizeGrid');
+            const floatingImg = document.getElementById('ecgKunFloatingImg');
+            const headerImg = document.getElementById('ecgKunHeaderImg');
+
+            // 画像設定データ
+            const ecgImages = [
+                { id: 'default', name: 'デフォルト', path: 'image/ECGkun.png', unlockAt: 0 },
+                { id: 'lv1', name: 'レベル1', path: 'image/ECGkun-lv1.png', unlockAt: 2 },
+                { id: 'lv2', name: 'レベル2', path: 'image/ECGkun-lv2.png', unlockAt: 5 },
+                { id: 'lv3', name: 'レベル3', path: 'image/ECGkun-lv3.png', unlockAt: 8 },
+                { id: 'lv4', name: 'レベル4', path: 'image/ECGkun-lv4.png', unlockAt: 12 },
+                { id: 'lv5', name: 'レベル5', path: 'image/ECGkun-lv5.png', unlockAt: 15 },
+                { id: 'lv6', name: 'レベル6', path: 'image/ECGkun-lv6.png', unlockAt: 19 },
+                { id: 'lv7', name: 'レベル7', path: 'image/ECGkun-lv7.png', unlockAt: 23 },
+                { id: 'lv8', name: 'レベル8', path: 'image/ECGkun-lv8.png', unlockAt: 26 },
+                { id: 'lv9', name: 'レベル9', path: 'image/ECGkun-lv9.png', unlockAt: 28 },
+                { id: 'lv10', name: 'レベル10', path: 'image/ECGkun-lv10.png', unlockAt: 30 }
+            ];
+
+            // 完了レッスン数を取得
+            function getCompletedLessonsCount() {
+                const levelConfig = {
+                    0: { lessons: ['l0-1', 'l0-2', 'l0-3', 'l0-4', 'l0-5', 'l0-6', 'l0-7', 'l0-8'] },
+                    1: { lessons: ['l1-9', 'l1-10', 'l1-11', 'l1-12', 'l1-13', 'l1-14', 'l1-15'] },
+                    2: { lessons: ['l2-16', 'l2-17', 'l2-18', 'l2-19', 'l2-20', 'l2-21', 'l2-22', 'l2-23'] },
+                    3: { lessons: ['l3-24', 'l3-25', 'l3-26', 'l3-27', 'l3-28', 'l3-29', 'l3-30'] }
+                };
+
+                let count = 0;
+                Object.keys(levelConfig).forEach(level => {
+                    const config = levelConfig[level];
+                    config.lessons.forEach(lessonId => {
+                        const key = `lesson_completed_${lessonId}`;
+                        if (localStorage.getItem(key) === 'true') {
+                            count++;
+                        }
+                    });
+                });
+                return count;
+            }
+
+            // 選択中の画像を取得
+            function getSelectedImage() {
+                return localStorage.getItem('ecg_selected_image') || 'default';
+            }
+
+            // 画像を適用
+            function applyImage(imageId) {
+                const image = ecgImages.find(img => img.id === imageId) || ecgImages[0];
+                floatingImg.src = image.path;
+                headerImg.src = image.path;
+                
+                // チャット内のECGくん画像も更新
+                const chatAvatars = document.querySelectorAll('.ecg-message-ecg .ecg-message-avatar img');
+                chatAvatars.forEach(avatar => {
+                    avatar.src = image.path;
+                });
+            }
+
+            // カスタマイズモーダルを開く
+            function openCustomizeModal() {
+                customizeModal.classList.add('active');
+                renderCustomizeGrid();
+            }
+
+            // カスタマイズモーダルを閉じる
+            function closeCustomizeModal() {
+                customizeModal.classList.remove('active');
+            }
+
+            // カスタマイズグリッドを描画
+            function renderCustomizeGrid() {
+                customizeGrid.innerHTML = '';
+                const completedCount = getCompletedLessonsCount();
+                const selectedId = getSelectedImage();
+
+                ecgImages.forEach(image => {
+                    const isUnlocked = completedCount >= image.unlockAt;
+                    const isSelected = image.id === selectedId;
+
+                    const card = document.createElement('div');
+                    card.className = `ecg-image-card relative bg-white rounded-xl border-2 overflow-hidden transition-all ${
+                        isUnlocked 
+                            ? isSelected 
+                                ? 'border-blue-500 shadow-lg cursor-pointer' 
+                                : 'border-slate-200 hover:border-blue-300 hover:shadow-md cursor-pointer'
+                            : 'border-slate-300 cursor-not-allowed'
+                    }`;
+
+                    card.innerHTML = `
+                        <div class="aspect-square p-4 flex items-center justify-center bg-slate-50 relative">
+                            <img src="${image.path}" alt="${image.name}" class="w-full h-full object-contain ${
+                                isUnlocked ? '' : 'ecg-image-silhouette'
+                            }">
+                            ${!isUnlocked ? `
+                                <div class="absolute top-2 right-2 bg-slate-700/80 rounded-full p-1.5">
+                                    <i class="fa-solid fa-lock text-white text-xs"></i>
+                                </div>
+                            ` : ''}
+                        </div>
+                        <div class="p-3 border-t border-slate-100">
+                            <p class="text-sm font-bold ${isUnlocked ? 'text-slate-800' : 'text-slate-500'}">${image.name}</p>
+                            ${isUnlocked 
+                                ? isSelected 
+                                    ? '<p class="text-xs text-blue-600 mt-1"><i class="fa-solid fa-check-circle mr-1"></i>選択中</p>'
+                                    : '<p class="text-xs text-green-600 mt-1"><i class="fa-solid fa-unlock mr-1"></i>解放済み</p>'
+                                : `<p class="text-xs text-slate-500 mt-1 font-medium">レッスン${image.unlockAt}達成で解放</p>`
+                            }
+                        </div>
+                    `;
+
+                    if (isUnlocked) {
+                        card.addEventListener('click', () => {
+                            localStorage.setItem('ecg_selected_image', image.id);
+                            applyImage(image.id);
+                            renderCustomizeGrid();
+                        });
+                    }
+
+                    customizeGrid.appendChild(card);
+                });
+            }
+
+            // 初期化時に画像を適用
+            applyImage(getSelectedImage());
+
+            // イベントリスナー
+            customizeButton.addEventListener('click', openCustomizeModal);
+            customizeClose.addEventListener('click', closeCustomizeModal);
+            customizeModal.querySelector('.ecg-customize-overlay').addEventListener('click', closeCustomizeModal);
+        }
+    </script>
+</body>
+</html>

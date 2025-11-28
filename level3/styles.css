@@ -1,0 +1,205 @@
+
+/* クイズモーダル */
+.quiz-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.95);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.quiz-modal.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.quiz-container {
+    width: 90%;
+    max-width: 600px;
+    perspective: 1000px;
+    position: relative;
+}
+
+.quiz-card {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 選択肢ボタン */
+.quiz-choice-btn {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+    font-weight: bold;
+    color: #475569;
+}
+
+.quiz-choice-btn:hover {
+    border-color: #3b82f6;
+    background: #eff6ff;
+    transform: translateX(5px);
+}
+
+.quiz-choice-btn.selected {
+    border-color: #3b82f6;
+    background: #3b82f6;
+    color: white;
+}
+
+/* 並び替え問題用 */
+.sortable-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    min-height: 3rem;
+    padding: 0.5rem;
+    background: #f8fafc;
+    border-radius: 0.5rem;
+    border: 2px dashed #cbd5e1;
+}
+
+.sortable-word {
+    background: white;
+    border: 1px solid #cbd5e1;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.2s;
+}
+
+.sortable-word:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.sortable-word.used {
+    opacity: 0.3;
+    pointer-events: none;
+    transform: scale(0.9);
+}
+
+/* 撃破アニメーション（破れる） */
+@keyframes shatter-left {
+    0% { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+    100% { transform: translate(-50px, 100px) rotate(-20deg); opacity: 0; }
+}
+
+@keyframes shatter-right {
+    0% { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+    100% { transform: translate(50px, 100px) rotate(20deg); opacity: 0; }
+}
+
+.quiz-card.shattering-left {
+    animation: shatter-left 0.6s ease-in forwards;
+    clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.quiz-card.shattering-right {
+    animation: shatter-right 0.6s ease-in forwards;
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* 防御アニメーション（カキン） */
+@keyframes block-shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px) rotate(-2deg); }
+    20%, 40%, 60%, 80% { transform: translateX(10px) rotate(2deg); }
+}
+
+.quiz-card.blocked {
+    animation: block-shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
+    border: 2px solid #ef4444;
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+}
+
+.quiz-card.blocked::after {
+    content: 'MISS!';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    font-size: 5rem;
+    font-weight: 900;
+    color: #ef4444;
+    border: 5px solid #ef4444;
+    padding: 1rem;
+    border-radius: 1rem;
+    opacity: 0;
+    animation: miss-popup 0.4s ease-out forwards;
+    z-index: 10;
+}
+
+@keyframes miss-popup {
+    0% { transform: translate(-50%, -50%) scale(0) rotate(-15deg); opacity: 0; }
+    50% { transform: translate(-50%, -50%) scale(1.2) rotate(-15deg); opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(1) rotate(-15deg); opacity: 1; }
+}
+
+/* クリア済みレッスン */
+.lesson-completed {
+    position: relative;
+}
+
+.lesson-completed::after {
+    content: 'CLEARED!';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #fbbf24;
+    color: #78350f;
+    font-weight: 900;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    transform: rotate(10deg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border: 2px solid white;
+    z-index: 10;
+    animation: stamp-pop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.lesson-completed .fa-chevron-right {
+    color: #fbbf24 !important;
+    background: #fffbeb;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+@keyframes stamp-pop {
+    from { transform: scale(2) rotate(10deg); opacity: 0; }
+    to { transform: scale(1) rotate(10deg); opacity: 1; }
+}

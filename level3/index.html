@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上級 | English Grammar Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-slate-50 min-h-screen">
+    <div class="min-h-screen bg-slate-50">
+        <!-- ヘッダー -->
+        <div class="level-header-animate bg-red-600 text-white p-6 pb-12 shadow-md">
+            <a href="../index.html" class="mb-4 text-white/80 hover:text-white text-sm font-bold flex items-center inline-block">
+                <i class="fa-solid fa-arrow-left mr-2"></i> HOME
+            </a>
+            <h1 class="level-title-animate text-3xl font-bold">上級</h1>
+            <p class="level-subtitle-animate opacity-80">Level 3: Logic</p>
+        </div>
+
+        <!-- リスト -->
+        <div class="max-w-3xl mx-auto px-4 -mt-6 space-y-3 pb-20">
+            <a href="lesson-l3-24.html" class="lesson-item-animate bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition-colors group block" data-delay="0">
+                <div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-red-600 transition-colors">24. 仮定法（過去・過去完了）</h3>
+                    <p class="text-sm text-slate-500">もし〜だったら、の表現</p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-slate-300"></i>
+            </a>
+
+            <a href="lesson-l3-25.html" class="lesson-item-animate bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition-colors group block" data-delay="100">
+                <div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-red-600 transition-colors">25. 分詞構文</h3>
+                    <p class="text-sm text-slate-500">-ing で始まる副詞句</p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-slate-300"></i>
+            </a>
+
+            <a href="lesson-l3-26.html" class="lesson-item-animate bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition-colors group block" data-delay="200">
+                <div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-red-600 transition-colors">26. 関係副詞・複合関係詞</h3>
+                    <p class="text-sm text-slate-500">where, when, why と whoever など</p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-slate-300"></i>
+            </a>
+
+            <a href="lesson-l3-27.html" class="lesson-item-animate bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition-colors group block" data-delay="300">
+                <div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-red-600 transition-colors">27. 倒置・強調構文</h3>
+                    <p class="text-sm text-slate-500">語順を変えて強調する</p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-slate-300"></i>
+            </a>
+
+            <a href="lesson-l3-28.html" class="lesson-item-animate bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition-colors group block" data-delay="400">
+                <div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-red-600 transition-colors">28. 話法（直接話法・間接話法）</h3>
+                    <p class="text-sm text-slate-500">「〜と言った」の表現</p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-slate-300"></i>
+            </a>
+
+            <a href="lesson-l3-29.html" class="lesson-item-animate bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition-colors group block" data-delay="500">
+                <div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-red-600 transition-colors">29. 無生物主語</h3>
+                    <p class="text-sm text-slate-500">モノが主語になる表現</p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-slate-300"></i>
+            </a>
+
+            <a href="lesson-l3-30.html" class="lesson-item-animate bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition-colors group block" data-delay="600">
+                <div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-red-600 transition-colors">30. 使役動詞・知覚動詞</h3>
+                    <p class="text-sm text-slate-500">make, let, see, hear など</p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-slate-300"></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const items = document.querySelectorAll('.lesson-item-animate');
+            items.forEach(item => {
+                const delay = parseInt(item.getAttribute('data-delay')) || 0;
+                setTimeout(() => {
+                    item.classList.add('visible');
+                }, 400 + delay);
+            });
+        });
+    </script>
+</body>
+</html>
+
