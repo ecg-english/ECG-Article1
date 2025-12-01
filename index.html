@@ -635,40 +635,58 @@
             const headerImg = document.getElementById('ecgKunHeaderImg');
 
             // 画像設定データ
+            // requiredLessons: 解放に必要なレッスンIDの配列（すべてクリアする必要がある）
             const ecgImages = [
-                { id: 'default', name: 'デフォルト', path: 'image/ECGkun.png', unlockAt: 0 },
-                { id: 'lv1', name: 'レベル1', path: 'image/ECGkun-lv1.png', unlockAt: 2 },
-                { id: 'lv2', name: 'レベル2', path: 'image/ECGkun-lv2.png', unlockAt: 5 },
-                { id: 'lv3', name: 'レベル3', path: 'image/ECGkun-lv3.png', unlockAt: 8 },
-                { id: 'lv4', name: 'レベル4', path: 'image/ECGkun-lv4.png', unlockAt: 12 },
-                { id: 'lv5', name: 'レベル5', path: 'image/ECGkun-lv5.png', unlockAt: 15 },
-                { id: 'lv6', name: 'レベル6', path: 'image/ECGkun-lv6.png', unlockAt: 19 },
-                { id: 'lv7', name: 'レベル7', path: 'image/ECGkun-lv7.png', unlockAt: 23 },
-                { id: 'lv8', name: 'レベル8', path: 'image/ECGkun-lv8.png', unlockAt: 26 },
-                { id: 'lv9', name: 'レベル9', path: 'image/ECGkun-lv9.png', unlockAt: 28 },
-                { id: 'lv10', name: 'レベル10', path: 'image/ECGkun-lv10.png', unlockAt: 30 }
+                { id: 'default', name: 'デフォルト', path: 'image/ECGkun.png', requiredLessons: [] },
+                { id: 'lv1', name: 'レベル1', path: 'image/ECGkun-lv1.png', requiredLessons: ['l0-1', 'l0-2'] },
+                { id: 'lv2', name: 'レベル2', path: 'image/ECGkun-lv2.png', requiredLessons: ['l0-1', 'l0-2', 'l0-3', 'l0-4', 'l0-5'] },
+                { id: 'lv3', name: 'レベル3', path: 'image/ECGkun-lv3.png', requiredLessons: ['l0-1', 'l0-2', 'l0-3', 'l0-4', 'l0-5', 'l0-6'] },
+                { id: 'lv4', name: 'レベル4', path: 'image/ECGkun-lv4.png', requiredLessons: ['l0-1', 'l0-2', 'l0-3', 'l0-4', 'l0-5', 'l0-6', 'l0-7', 'l0-8', 'l1-9', 'l1-10', 'l1-11', 'l1-12'] },
+                { id: 'lv5', name: 'レベル5', path: 'image/ECGkun-lv5.png', requiredLessons: ['l0-1', 'l0-2', 'l0-3', 'l0-4', 'l0-5', 'l0-6', 'l0-7', 'l0-8', 'l1-9', 'l1-10', 'l1-11', 'l1-12', 'l1-13', 'l1-14', 'l1-15'] },
+                { id: 'lv6', name: 'レベル6', path: 'image/ECGkun-lv6.png', requiredLessons: ['l0-1', 'l0-2', 'l0-3', 'l0-4', 'l0-5', 'l0-6', 'l0-7', 'l0-8', 'l1-9', 'l1-10', 'l1-11', 'l1-12', 'l1-13', 'l1-14', 'l1-15', 'l2-16', 'l2-17', 'l2-18', 'l2-19'] },
+                { id: 'lv7', name: 'レベル7', path: 'image/ECGkun-lv7.png', requiredLessons: ['l0-1', 'l0-2', 'l0-3', 'l0-4', 'l0-5', 'l0-6', 'l0-7', 'l0-8', 'l1-9', 'l1-10', 'l1-11', 'l1-12', 'l1-13', 'l1-14', 'l1-15', 'l2-16', 'l2-17', 'l2-18', 'l2-19', 'l2-20', 'l2-21', 'l2-22', 'l2-23'] },
+                { id: 'lv8', name: 'レベル8', path: 'image/ECGkun-lv8.png', requiredLessons: ['l0-1', 'l0-2', 'l0-3', 'l0-4', 'l0-5', 'l0-6', 'l0-7', 'l0-8', 'l1-9', 'l1-10', 'l1-11', 'l1-12', 'l1-13', 'l1-14', 'l1-15', 'l2-16', 'l2-17', 'l2-18', 'l2-19', 'l2-20', 'l2-21', 'l2-22', 'l2-23', 'l3-24', 'l3-25', 'l3-26'] },
+                { id: 'lv9', name: 'レベル9', path: 'image/ECGkun-lv9.png', requiredLessons: ['l0-1', 'l0-2', 'l0-3', 'l0-4', 'l0-5', 'l0-6', 'l0-7', 'l0-8', 'l1-9', 'l1-10', 'l1-11', 'l1-12', 'l1-13', 'l1-14', 'l1-15', 'l2-16', 'l2-17', 'l2-18', 'l2-19', 'l2-20', 'l2-21', 'l2-22', 'l2-23', 'l3-24', 'l3-25', 'l3-26', 'l3-27', 'l3-28'] },
+                { id: 'lv10', name: 'レベル10', path: 'image/ECGkun-lv10.png', requiredLessons: ['l0-1', 'l0-2', 'l0-3', 'l0-4', 'l0-5', 'l0-6', 'l0-7', 'l0-8', 'l1-9', 'l1-10', 'l1-11', 'l1-12', 'l1-13', 'l1-14', 'l1-15', 'l2-16', 'l2-17', 'l2-18', 'l2-19', 'l2-20', 'l2-21', 'l2-22', 'l2-23', 'l3-24', 'l3-25', 'l3-26', 'l3-27', 'l3-28', 'l3-29', 'l3-30'] }
             ];
 
-            // 完了レッスン数を取得
-            function getCompletedLessonsCount() {
-                const levelConfig = {
-                    0: { lessons: ['l0-1', 'l0-2', 'l0-3', 'l0-4', 'l0-5', 'l0-6', 'l0-7', 'l0-8'] },
-                    1: { lessons: ['l1-9', 'l1-10', 'l1-11', 'l1-12', 'l1-13', 'l1-14', 'l1-15'] },
-                    2: { lessons: ['l2-16', 'l2-17', 'l2-18', 'l2-19', 'l2-20', 'l2-21', 'l2-22', 'l2-23'] },
-                    3: { lessons: ['l3-24', 'l3-25', 'l3-26', 'l3-27', 'l3-28', 'l3-29', 'l3-30'] }
-                };
-
-                let count = 0;
-                Object.keys(levelConfig).forEach(level => {
-                    const config = levelConfig[level];
-                    config.lessons.forEach(lessonId => {
-                        const key = `lesson_completed_${lessonId}`;
-                        if (localStorage.getItem(key) === 'true') {
-                            count++;
-                        }
-                    });
+            // 指定されたレッスンがすべて完了しているかチェック
+            function areLessonsCompleted(lessonIds) {
+                if (!lessonIds || lessonIds.length === 0) return true;
+                
+                return lessonIds.every(lessonId => {
+                    const key = `lesson_completed_${lessonId}`;
+                    return localStorage.getItem(key) === 'true';
                 });
-                return count;
+            }
+
+            // レッスンIDからレッスン番号を取得（表示用）
+            function getLessonNumber(lessonId) {
+                const match = lessonId.match(/l(\d+)-(\d+)/);
+                if (match) {
+                    const level = parseInt(match[1]);
+                    const num = parseInt(match[2]);
+                    return num;
+                }
+                return null;
+            }
+
+            // レッスン範囲の表示用テキストを生成
+            function getRequiredLessonsText(lessonIds) {
+                if (!lessonIds || lessonIds.length === 0) return '';
+                
+                if (lessonIds.length === 1) {
+                    const num = getLessonNumber(lessonIds[0]);
+                    return num ? `レッスン${num}` : '';
+                }
+                
+                const firstNum = getLessonNumber(lessonIds[0]);
+                const lastNum = getLessonNumber(lessonIds[lessonIds.length - 1]);
+                
+                if (firstNum && lastNum) {
+                    return `レッスン${firstNum}~${lastNum}`;
+                }
+                return '';
             }
 
             // 選択中の画像を取得
@@ -703,12 +721,12 @@
             // カスタマイズグリッドを描画
             function renderCustomizeGrid() {
                 customizeGrid.innerHTML = '';
-                const completedCount = getCompletedLessonsCount();
                 const selectedId = getSelectedImage();
 
                 ecgImages.forEach(image => {
-                    const isUnlocked = completedCount >= image.unlockAt;
+                    const isUnlocked = areLessonsCompleted(image.requiredLessons);
                     const isSelected = image.id === selectedId;
+                    const requiredText = getRequiredLessonsText(image.requiredLessons);
 
                     const card = document.createElement('div');
                     card.className = `ecg-image-card relative bg-white rounded-xl border-2 overflow-hidden transition-all ${
@@ -736,7 +754,9 @@
                                 ? isSelected 
                                     ? '<p class="text-xs text-blue-600 mt-1"><i class="fa-solid fa-check-circle mr-1"></i>選択中</p>'
                                     : '<p class="text-xs text-green-600 mt-1"><i class="fa-solid fa-unlock mr-1"></i>解放済み</p>'
-                                : `<p class="text-xs text-slate-500 mt-1 font-medium">レッスン${image.unlockAt}達成で解放</p>`
+                                : requiredText 
+                                    ? `<p class="text-xs text-slate-500 mt-1 font-medium">${requiredText}をすべてクリアで解放</p>`
+                                    : ''
                             }
                         </div>
                     `;
@@ -762,5 +782,6 @@
             customizeModal.querySelector('.ecg-customize-overlay').addEventListener('click', closeCustomizeModal);
         }
     </script>
+    <script src="auth.js"></script>
 </body>
 </html>
